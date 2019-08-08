@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C2827422FBBAE40043503D /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2827322FBBAE40043503D /* config.swift */; };
 		84F71AE322BD5EC300196AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71AE222BD5EC300196AF0 /* AppDelegate.swift */; };
 		84F71AE522BD5EC300196AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71AE422BD5EC300196AF0 /* ViewController.swift */; };
 		84F71AE822BD5EC300196AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F71AE622BD5EC300196AF0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		84F71AF022BD5EC500196AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F71AEE22BD5EC500196AF0 /* LaunchScreen.storyboard */; };
 		84F71AFB22BD5EC500196AF0 /* Kats_KitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71AFA22BD5EC500196AF0 /* Kats_KitchenTests.swift */; };
 		84F71B0622BD5EC500196AF0 /* Kats_KitchenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71B0522BD5EC500196AF0 /* Kats_KitchenUITests.swift */; };
+		84F71B1A22BD621100196AF0 /* EdmamAPIRecipie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71B1922BD621100196AF0 /* EdmamAPIRecipie.swift */; };
+		84F71B1C22CADFAE00196AF0 /* EdamamAPIRecipieConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71B1B22CADFAE00196AF0 /* EdamamAPIRecipieConstants.swift */; };
+		B19886D604F1E9DEBE48A882 /* libPods-Kats Kitchen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B2A67E894BFAF1D8A98827 /* libPods-Kats Kitchen.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52B2A67E894BFAF1D8A98827 /* libPods-Kats Kitchen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kats Kitchen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57EA002D0B71EB12CB64D976 /* Pods-Kats Kitchen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kats Kitchen.debug.xcconfig"; path = "Target Support Files/Pods-Kats Kitchen/Pods-Kats Kitchen.debug.xcconfig"; sourceTree = "<group>"; };
+		83A3245089E13E5E4F718597 /* Pods-Kats Kitchen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kats Kitchen.release.xcconfig"; path = "Target Support Files/Pods-Kats Kitchen/Pods-Kats Kitchen.release.xcconfig"; sourceTree = "<group>"; };
+		84C2827322FBBAE40043503D /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		84F71ADF22BD5EC300196AF0 /* Kats Kitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kats Kitchen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F71AE222BD5EC300196AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F71AE422BD5EC300196AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		84F71B0122BD5EC500196AF0 /* Kats KitchenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kats KitchenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F71B0522BD5EC500196AF0 /* Kats_KitchenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kats_KitchenUITests.swift; sourceTree = "<group>"; };
 		84F71B0722BD5EC500196AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F71B1922BD621100196AF0 /* EdmamAPIRecipie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdmamAPIRecipie.swift; sourceTree = "<group>"; };
+		84F71B1B22CADFAE00196AF0 /* EdamamAPIRecipieConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamAPIRecipieConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19886D604F1E9DEBE48A882 /* libPods-Kats Kitchen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F83F6984608411E55502E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B2A67E894BFAF1D8A98827 /* libPods-Kats Kitchen.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0BF46B017F94E51F221E64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57EA002D0B71EB12CB64D976 /* Pods-Kats Kitchen.debug.xcconfig */,
+				83A3245089E13E5E4F718597 /* Pods-Kats Kitchen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84F71AD622BD5EC300196AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				84F71AF922BD5EC500196AF0 /* Kats KitchenTests */,
 				84F71B0422BD5EC500196AF0 /* Kats KitchenUITests */,
 				84F71AE022BD5EC300196AF0 /* Products */,
+				6E0BF46B017F94E51F221E64 /* Pods */,
+				1F83F6984608411E55502E5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +130,14 @@
 			isa = PBXGroup;
 			children = (
 				84F71AE222BD5EC300196AF0 /* AppDelegate.swift */,
-				84F71AE422BD5EC300196AF0 /* ViewController.swift */,
-				84F71AE622BD5EC300196AF0 /* Main.storyboard */,
-				84F71AEC22BD5EC500196AF0 /* Assets.xcassets */,
-				84F71AEE22BD5EC500196AF0 /* LaunchScreen.storyboard */,
+				84C2827322FBBAE40043503D /* config.swift */,
+				84F71B1322BD5EEE00196AF0 /* View */,
+				84F71B1822BD603100196AF0 /* StoryBoards */,
+				84F71B1622BD5F0300196AF0 /* Network */,
+				84F71B1522BD5EF700196AF0 /* Extensions */,
+				84F71B1422BD5EF300196AF0 /* Model */,
 				84F71AF122BD5EC500196AF0 /* Info.plist */,
-				84F71AE922BD5EC300196AF0 /* Kats_Kitchen.xcdatamodeld */,
+				84F71AEC22BD5EC500196AF0 /* Assets.xcassets */,
 			);
 			path = "Kats Kitchen";
 			sourceTree = "<group>";
@@ -128,6 +160,55 @@
 			path = "Kats KitchenUITests";
 			sourceTree = "<group>";
 		};
+		84F71B1322BD5EEE00196AF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F71AE422BD5EC300196AF0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F71B1422BD5EF300196AF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F71B1722BD5F1A00196AF0 /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F71B1522BD5EF700196AF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84F71B1622BD5F0300196AF0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84F71B1922BD621100196AF0 /* EdmamAPIRecipie.swift */,
+				84F71B1B22CADFAE00196AF0 /* EdamamAPIRecipieConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84F71B1722BD5F1A00196AF0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				84F71AE922BD5EC300196AF0 /* Kats_Kitchen.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		84F71B1822BD603100196AF0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				84F71AEE22BD5EC500196AF0 /* LaunchScreen.storyboard */,
+				84F71AE622BD5EC300196AF0 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F71B0A22BD5EC500196AF0 /* Build configuration list for PBXNativeTarget "Kats Kitchen" */;
 			buildPhases = (
+				858074CD4EC1EDFA30A455EF /* [CP] Check Pods Manifest.lock */,
 				84F71ADB22BD5EC300196AF0 /* Sources */,
 				84F71ADC22BD5EC300196AF0 /* Frameworks */,
 				84F71ADD22BD5EC300196AF0 /* Resources */,
@@ -254,14 +336,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		858074CD4EC1EDFA30A455EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kats Kitchen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F71ADB22BD5EC300196AF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F71B1C22CADFAE00196AF0 /* EdamamAPIRecipieConstants.swift in Sources */,
 				84F71AE522BD5EC300196AF0 /* ViewController.swift in Sources */,
 				84F71AEB22BD5EC300196AF0 /* Kats_Kitchen.xcdatamodeld in Sources */,
+				84C2827422FBBAE40043503D /* config.swift in Sources */,
 				84F71AE322BD5EC300196AF0 /* AppDelegate.swift in Sources */,
+				84F71B1A22BD621100196AF0 /* EdmamAPIRecipie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +544,7 @@
 		};
 		84F71B0B22BD5EC500196AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EA002D0B71EB12CB64D976 /* Pods-Kats Kitchen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +563,7 @@
 		};
 		84F71B0C22BD5EC500196AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A3245089E13E5E4F718597 /* Pods-Kats Kitchen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
