@@ -14,7 +14,7 @@ struct RecipieResponse: Codable {
     var params: Params
     var more: Bool
     var count: Float
-    var hits: [Hits]
+    var hits: [Hits]?
 }
 
 struct Params: Codable{
@@ -25,6 +25,8 @@ struct Params: Codable{
 }
 struct Hits: Codable {
     var recipe: Recipe
+    var bookmarked: Bool
+    var bought: Bool
 }
 
 struct Recipe: Codable {
@@ -49,70 +51,69 @@ struct Recipe: Codable {
     var totalNutrients: TotalNutrients
     var totalDaily: TotalDaily
     var digest: [Digest]
-    var bookmarked: Bool
-    var bought: Bool
+    
     
 }
 
 struct TotalNutrients: Codable {
-    var ENERC_KCAL: Nutrient
-    var FAT: Nutrient
-    var FASAT: Nutrient
-    var FATRN: Nutrient
-    var FAMS: Nutrient
-    var FAPU: Nutrient
-    var CHOCDF: Nutrient
-    var FIBTG: Nutrient
-    var SUGAR: Nutrient
-    var PROCNT: Nutrient
-    var CHOLE: Nutrient
-    var NA: Nutrient
-    var CA: Nutrient
-    var MG: Nutrient
-    var K: Nutrient
-    var FE: Nutrient
-    var ZN: Nutrient
-    var P: Nutrient
-    var VITA_RAE: Nutrient
-    var VITC: Nutrient
-    var THIA: Nutrient
-    var RIBF: Nutrient
-    var NIA: Nutrient
-    var VITB6A: Nutrient
-    var FOLDFE: Nutrient
-    var FOLFD: Nutrient
-    var VITB12: Nutrient
-    var VITD: Nutrient
-    var TOCPHA: Nutrient
-    var VITK1: Nutrient
+    var ENERC_KCAL: Nutrient?
+    var FAT: Nutrient?
+    var FASAT: Nutrient?
+    var FATRN: Nutrient?
+    var FAMS: Nutrient?
+    var FAPU: Nutrient?
+    var CHOCDF: Nutrient?
+    var FIBTG: Nutrient?
+    var SUGAR: Nutrient?
+    var PROCNT: Nutrient?
+    var CHOLE: Nutrient?
+    var NA: Nutrient?
+    var CA: Nutrient?
+    var MG: Nutrient?
+    var K: Nutrient?
+    var FE: Nutrient?
+    var ZN: Nutrient?
+    var P: Nutrient?
+    var VITA_RAE: Nutrient?
+    var VITC: Nutrient?
+    var THIA: Nutrient?
+    var RIBF: Nutrient?
+    var NIA: Nutrient?
+    var VITB6A: Nutrient?
+    var FOLDFE: Nutrient?
+    var FOLFD: Nutrient?
+    var VITB12: Nutrient?
+    var VITD: Nutrient?
+    var TOCPHA: Nutrient?
+    var VITK1: Nutrient?
 }
 
 struct TotalDaily: Codable {
-    var ENERC_KCAL: Nutrient
-    var FAT: Nutrient
-    var FASAT: Nutrient
-    var CHOCDF: Nutrient
-    var FIBTG: Nutrient
-    var PROCNT: Nutrient
-    var CHOLE: Nutrient
-    var NA: Nutrient
-    var CA: Nutrient
-    var MG: Nutrient
-    var K: Nutrient
-    var FE: Nutrient
-    var ZN: Nutrient
-    var P: Nutrient
-    var VITA_RAE: Nutrient
-    var VITC: Nutrient
-    var THIA: Nutrient
-    var RIBF: Nutrient
-    var NIA: Nutrient
-    var VITB6A: Nutrient
-    var FOLDFE: Nutrient
-    var VITB12: Nutrient
-    var VITD: Nutrient
-    var TOCPHA: Nutrient
-    var VITK1: Nutrient
+    var ENERC_KCAL: Nutrient?
+    var FAT: Nutrient?
+    var FASAT: Nutrient?
+    var CHOCDF: Nutrient?
+    var FIBTG: Nutrient?
+    var PROCNT: Nutrient?
+    var CHOLE: Nutrient?
+    var NA: Nutrient?
+    var CA: Nutrient?
+    var MG: Nutrient?
+    var K: Nutrient?
+    var FE: Nutrient?
+    var ZN: Nutrient?
+    var P: Nutrient?
+    var VITA_RAE: Nutrient?
+    var VITC: Nutrient?
+    var THIA: Nutrient?
+    var RIBF: Nutrient?
+    var NIA: Nutrient?
+    var VITB6A: Nutrient?
+    var FOLDFE: Nutrient?
+    var VITB12: Nutrient?
+    var VITD: Nutrient?
+    var TOCPHA: Nutrient?
+    var VITK1: Nutrient?
 }
 
 struct Nutrient: Codable {
@@ -135,7 +136,7 @@ struct Digest: Codable {
 struct Sub: Codable {
     var label: String
     var tag: String
-    var schemaOrgTag: String
+    var schemaOrgTag: String?
     var total: Double
     var hasRDI: Bool
     var daily: Double
