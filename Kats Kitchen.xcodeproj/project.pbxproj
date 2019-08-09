@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84C2827422FBBAE40043503D /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2827322FBBAE40043503D /* config.swift */; };
+		84C2827622FD17AC0043503D /* RecipieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2827522FD17AC0043503D /* RecipieResponse.swift */; };
 		84F71AE322BD5EC300196AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71AE222BD5EC300196AF0 /* AppDelegate.swift */; };
 		84F71AE522BD5EC300196AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F71AE422BD5EC300196AF0 /* ViewController.swift */; };
 		84F71AE822BD5EC300196AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F71AE622BD5EC300196AF0 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		57EA002D0B71EB12CB64D976 /* Pods-Kats Kitchen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kats Kitchen.debug.xcconfig"; path = "Target Support Files/Pods-Kats Kitchen/Pods-Kats Kitchen.debug.xcconfig"; sourceTree = "<group>"; };
 		83A3245089E13E5E4F718597 /* Pods-Kats Kitchen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kats Kitchen.release.xcconfig"; path = "Target Support Files/Pods-Kats Kitchen/Pods-Kats Kitchen.release.xcconfig"; sourceTree = "<group>"; };
 		84C2827322FBBAE40043503D /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		84C2827522FD17AC0043503D /* RecipieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipieResponse.swift; sourceTree = "<group>"; };
 		84F71ADF22BD5EC300196AF0 /* Kats Kitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kats Kitchen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F71AE222BD5EC300196AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F71AE422BD5EC300196AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				84F71B1722BD5F1A00196AF0 /* CoreData */,
+				84C2827522FD17AC0043503D /* RecipieResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F71B1C22CADFAE00196AF0 /* EdamamAPIRecipieConstants.swift in Sources */,
+				84C2827622FD17AC0043503D /* RecipieResponse.swift in Sources */,
 				84F71AE522BD5EC300196AF0 /* ViewController.swift in Sources */,
 				84F71AEB22BD5EC300196AF0 /* Kats_Kitchen.xcdatamodeld in Sources */,
 				84C2827422FBBAE40043503D /* config.swift in Sources */,
